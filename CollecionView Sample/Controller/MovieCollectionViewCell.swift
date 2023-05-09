@@ -13,14 +13,8 @@ class MovieCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var movieNameLabel: UILabel!
     
-    
     func setup(with movie:Movie){
         movieImageView.image = movie.image
         movieNameLabel.text = movie.title
-    }
-    
-    
-    override func prepareForReuse() {
-        super.prepareForReuse()
     }
 }
